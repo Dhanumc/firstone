@@ -17,20 +17,17 @@
   </dependencies>
 
    <distributionManagement>
-     <snapshotRepository>
-        <id>my_snapshots</id>
-        <name>n_snap</name>
-        <url>http://localhost:8081/nexus/content/repositories/my_snapshots</url>
-     </snapshotRepository>
-
-     <repository>
-        <id>my-releases</id>
-        <name>n_release</name>
-        <url>http://localhost:8081/nexus/content/repositories/my-releases</url>
-     </repository>
+      <snapshotRepository>
+        <id>snapshots</id>
+        <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+      </snapshotRepository>
+      <repository>
+        <id>releases</id>
+        <url>http://localhost:8081/nexus/content/repositories/releases</url>
+      </repository>
   </distributionManagement>
 
-<build>
+ <build>
   <plugins>
     <plugin>
        <groupId>org.sonatype.plugins</groupId>
